@@ -1,0 +1,19 @@
+.section-img{
+    width: 100%;
+    min-height:250px;
+}
+
+section p {
+margin: 16px;
+line-height: 1.5;
+@include media-breakpoint-up(md){
+    line-height: 2.5;}
+}
+    
+.section-break{
+@include media-breakpoint-up(md){
+       margin-top: -20px;
+margin-bottom: -20px;}
+
+}
+

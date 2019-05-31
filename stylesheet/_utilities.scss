@@ -1,0 +1,48 @@
+
+@mixin text-color($color){
+  color:$color ;
+    &:hover,&:active,&focus{
+      color: darken($color, 7.5%);
+    }
+}
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+  .position--Align {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.zindex--1 {
+  z-index: -1;
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+//將文字轉直//
+.writing-vertical-md{
+@include media-breakpoint-up(md) {
+    writing-mode: vertical-rl;
+  }
+}
+
+.custom-primary-color{
+    text-align: center;
+    background: $primary;
+    color: #fff;
+}
+
+//register 社交網站//
+.btn-brand-light {
+  @include button-variant($white, $info);
+}
+ //加入購物車//
+.btn-color{
+ @include button-variant($info,$info);
+@include text-color($primary);
+}
+

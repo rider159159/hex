@@ -1,0 +1,42 @@
+
+.item-card{
+
+.item-image{
+    height: 315px;
+    position: relative;
+.item-stared-icon{
+        position: absolute;
+    top: 20px;
+    right: 22px;
+font-size: 1.25rem;
+}
+.item-tag{
+    color: white;
+background-color: $primary;
+position: absolute;
+left: 15px;
+writing-mode: vertical-rl;
+padding: 10px;
+letter-spacing: 5px;
+}
+}
+
+.item-body{
+        border: 1px solid $info;
+&-text{
+        border-right: 1px solid $info;
+        padding: 15px;
+        font-size: 1.25rem;
+}
+&-btn{
+    font-size: 1.5rem;
+    padding: 12px;
+    font-weight: 1000;
+    width: 100%;
+    display: block;
+}
+}
+
+}
+
+
