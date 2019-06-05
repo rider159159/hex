@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> 六角甜點工坊 -
-    登入
-</title>
-<meta property="og:title" content="登入 | 六角甜點工坊 " />
-<meta property="og:description" content=" 使用 Bootstrap 結合 Sass 結束這回合吧 " />
-<meta property="og:site_name" content=" 六角學院 " />
-<meta property="og:locale" content="zh_TW" />
-<link rel="icon" href="images/favicon_48.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 六角甜點工坊 -
+        登入
+    </title>
+    <meta property="og:title" content="登入 | 六角甜點工坊 " />
+    <meta property="og:description" content=" 使用 Bootstrap 結合 Sass 結束這回合吧 " />
+    <meta property="og:site_name" content=" 六角學院 " />
+    <meta property="og:locale" content="zh_TW" />
+    <link rel="icon" href="images/favicon_48.ico">
     <link rel="stylesheet" href="stylesheet/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -21,16 +21,13 @@
 </head>
 
 <body>
-
+    <!--nav-->
     <nav class="navbar navbar-expand-md navbar-light bg-white">
         <div class="container justify-content-between">
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-
             <h1 class="text-hide">
                 <a class="navbar-brand mr-auto" href="index.html">
                     <img src="./images/logo-all-dark.svg" width="220" height="40" alt=""
@@ -39,35 +36,29 @@
                         class="d-inline-block d-md-none ">
                 </a>
                 六角甜點工坊
-
             </h1>
 
             <a href="cart.html" class="p-4 order-md-1"><i class="fas fa-shopping-cart"></i></a>
 
-
             <div class="collapse navbar-collapse align-items: center;" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-primary font-weight-bold" href="index.html">首頁 <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sweety.html">甜點</a>
+                        <a class="nav-link text-primary font-weight-bold" href="sweety.html">甜點</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="register.html">登入</a>
+                        <a class="nav-link text-primary font-weight-bold" href="register.html">登入</a>
                     </li>
-
                 </ul>
-
             </div>
-
         </div>
-
     </nav>
-
-
-    <section class="my-md-6">
-        <div class="container">
+    <!--sign-->
+    <section class="container my-md-6">
+        <div class="mx-n3">
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div class="d-block d-md-none custom-primary-color py-5">
@@ -80,18 +71,18 @@
                                 <div class="row no-gutters">
                                     <div class="col-4 col-md-12 mb-md-4">
                                         <button class="btn btn-brand-light btn-block py-3 h-100">
-                                            <img src="./images/ic-facebook-logotype.svg" alt="" width="100"
-                                                class=".img-fluid">
+                                            <img src="./images/ic-facebook-logotype.svg" alt=""
+                                                class="img-fluid social-img">
                                         </button>
                                     </div>
                                     <div class="col-4 col-md-12 mb-md-4">
                                         <button class="btn btn-brand-light  btn-block py-3 h-100">
-                                            <img src="./images/ic-google.svg" alt="" width="100" class=".img-fluid">
+                                            <img src="./images/ic-google.svg" alt="" class="img-fluid social-img">
                                         </button>
                                     </div>
                                     <div class="col-4 col-md-12 mb-md-4">
                                         <button class="btn btn-brand-light  btn-block py-3 h-100">
-                                            <img src="./images/ic-yahoo.svg" alt="" width="100" class=".img-fluid">
+                                            <img src="./images/ic-yahoo.svg" alt="" class="img-fluid social-img">
                                         </button>
                                     </div>
                                 </div>
@@ -113,32 +104,34 @@
                                     <label for="password" class="material-icons form-square-icon-left">
                                         vpn_key
                                     </label>
-                                    <input type="text" id="password" class="form-input" placeholder="請輸入使用者密碼">
+                                    <input type="password" id="password" class="form-input" placeholder="請輸入使用者密碼">
                                 </div>
-
-
-                            <div class="custom-control custom-checkbox mr-sm-2">
-                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                                <label class="custom-control-label text-white" for="customControlAutosizing">記住我</label>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                    <label class="custom-control-label text-white"
+                                        for="customControlAutosizing">記住我</label>
+                                </div>
                             </div>
-                            </div>
-                            <button class="btn btn-accent btn-block py-3 btn-lg text-primary">登入帳號</button>
+                            <button class="btn btn-accent btn-block py-3 btn-font btn-lg text-primary">登入帳號</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <!--subscription-->
     <section>
         <div class="bg-primary py-md-4">
-            <div class="container px-7">
-                <div class="row">
+            <div class="container  px-md-7 px-5">
+                <div class="row px-md-5 px-0">
                     <div class="col-md-6 align-item-center py-4 p-md-0">
-                        <img src="./images/logo-light.svg" alt="" height="40px" width="40px">
-                        <span class="text-white h4 align-middle">訂閱你我的甜蜜郵件</span>
+                        <div class="d-flex d-flex align-items-center justify-content-center justify-content-md-start">
+                            <img src="./images/logo-light.svg" alt="" height="40px" width="40px" class="mr-2">
+                            <span class="text-white h4 align-middle">訂閱你我的甜蜜郵件</span>
+                        </div>
+
                     </div>
-                    <div class="col-md-6 pb-3 pb-md-0">
+                    <div class="col-md-6 pb-4 pb-md-0">
                         <div class="input-group input-group-lg">
                             <div class="input-group-prepend">
                                 <span class="input-group-text bg-white" id="basic-addon1">
@@ -156,36 +149,40 @@
             </div>
         </div>
     </section>
-
-    <footer class="bg-third py-4">
-        <div class="container px-7 text-primary">
-
-            <div class="row justify-content-between mb-3">
-                <div class="d-flex flex-column justify-content-between">
-                    <div class="mt-3 mb-5 mb-md-0">
-                        <img src="./images/logotype-lg-dark.svg" alt="" width="171.22" height="26.6">
+    <!--footer-->
+    <footer class="bg-info pt-5 pb-4 px-3 px-md-3 text-primary">
+        <div class="container">
+            <div class="row justify-content-center mb-6">
+                <div class="col-md-5 d-flex flex-column justify-content-between">
+                    <div class="mb- mb-md-0">
+                        <a href="#">
+                            <img src="images/logotype-lg-dark.svg" width="174">
+                        </a>
                     </div>
-                    <div>
-                        <div>07-1234-5678</div>
-                        <div>sweetaste@email.com</div>
-                        <div>800 高雄市新興區幸福路 520 號</div>
-                    </div>
+                    <ul class="list-unstyled mb-0">
+                        <li>07-1234-5678</li>
+                        <li>sweetaste@email.com</li>
+                        <li>800 高雄市新興區幸福路 520 號</li>
+                    </ul>
                 </div>
-                <div class="d-none d-md-block">
-                    <img src="./images/sm-今天是個吃甜點的好日子.svg" alt="今天是個吃甜點的好日子" width="59.28" height="218.69">
+                <div class="col-md-5">
+                    <div class="text-right d-none d-md-block">
+                        <img src="./images/sm-今天是個吃甜點的好日子.svg" width="60" height="220" alt="今天是個吃甜點的好日子">
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-between align-items-end">
-                <div class="col-md-6 p-0 mb-3 mb-md-0 social-lists">
-                    <a href="#" class="h2"><i class="fas fa-at"></i></a>
-                    <a href="#" class="h2"><i class="fab fa-facebook"></i></a>
+            <div class="row justify-content-center align-items-end">
+                <div class="col-md-5 mb-5 mb-md-0">
+                    <img src="images/ic-line@.svg" width="32" alt="line@">
+                    <img src="images/ic-facebook.svg" width="32" alt="facebook">
                 </div>
-                <div class="col-md-6 p-0 text-md-right">
-                    © 2018 Sweetaste* All Rights Reserved
+                <div class="col-md-5 text-md-right">
+                    <p class="mb-0">© 2018 Sweetaste* All Rights Reserved</p>
                 </div>
             </div>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

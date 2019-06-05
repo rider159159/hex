@@ -1,73 +1,106 @@
 
-.header__img{
- width: 100%;
-height: 496px;
-&__index{
-  background-image: url(https://bit.ly/2OhbMHr);
-}
-&__sweety{
- background-image: url(https://bit.ly/2Qodh3Z);
-position: relative;
-&__cover{
-  position: absolute;
-  right: 0;
-      right: 40px;
-    top: 40px;
-}
-}
-&__checkout-4{
-    background-image: url(https://bit.ly/2P7GhNd);
-}
+.header__img {
+    width: 100%;
+    height: 277px;
 
-}
+    &__index {
+        background-image: url(https://bit.ly/2OhbMHr);
 
-
-
-
-.mt--9{
-    margin-top: -90px;
-  }
-  
-   .rectangle-over {
-      background-color: rgba(theme-color('primary'), .8);
-      transition: background-color .5s;
+        @include media-breakpoint-up(md) {
+            height: 496px;
+        }
     }
 
-    .rectangle-image-wrap {
-    height:256px;
+    &__sweety {
+        background-image: url(https://bit.ly/2Qodh3Z);
+        position: relative;
+
+        @include media-breakpoint-up(md) {
+            height: 496px;
+        }
+
+        &__cover {
+            position: absolute;
+            right: 0;
+            right: 40px;
+            top: 40px;
+        }
+    }
+
+    &__checkout-4 {
+        background-image: url(https://bit.ly/2P7GhNd);
+        height: 518px;
+
+        @include media-breakpoint-up(md) {
+            height: 460px;
+        }
+    }
+
+}
+
+.mt--9 {
+    @include media-breakpoint-up(md) {
+        margin-top: -90px;
+    }
+}
+
+/*最外部框框*/
+.rectangle-image-wrap {
+    height: 180px;
     z-index: 2;
     display: flex;
     position: relative;
-  color: white;
-    border: 1px solid white;
-      overflow: hidden;
-         &.active, &:hover, &:focus {
-      color: theme-color('primary');
-      font-weight: bolder;
-          .rectangle-over {
-        background-color: rgba(theme-color('accent'), .8);
-      }
-    
-      .rectangle-image {
-        filter: blur(0);
-      }
-    } 
+    color: white;
+    border-right: 1px solid white;
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+        height: 256px;
+    }
+
+    /*特效設定 文字顏色、背景顏色 模糊度*/
+    &.active,
+    &:hover,
+    &:focus {
+        color: theme-color('primary');
+        font-weight: bolder;
+
+        .rectangle-over {
+            background-color: rgba(theme-color('accent'), .8);
+        }
+
+        .rectangle-image {
+            filter: blur(0);
+        }
+    }
 }
+
+/*黃黃的特效，並且定位*/
+.rectangle-over {
+    background-color: rgba(theme-color('primary'), .8);
+    transition: background-color .5s;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+//文字直行//
 .rectangle-text {
-    font-size: 24px;
     letter-spacing: 10px;
-     writing-mode: vertical-lr;
-      text-decoration: none;
-      position: absolute;
-      top: 25%;
-      left: 45%;
-  }
-   
+    writing-mode: vertical-lr;
+}
+
+//最底層圖片，定位並模糊//
 .rectangle-image {
-    height: 100%;
-    width: 100%;
     filter: blur(5px);
     z-index: -2;
     transition: filter .5s;
-  }
- 
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+}
